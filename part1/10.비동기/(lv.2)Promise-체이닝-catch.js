@@ -12,7 +12,16 @@
  */
 
 // TODO: getDataWithFallback 함수를 작성하세요.
-async function getDataWithFallback(primary, fallback) {}
+async function getDataWithFallback(primary, fallback) {
+  try {
+    const response = await primary(); // resolve되면 해당 결과값 반환
+    return response;
+  } catch (err) {
+    console.error(err);
+    const fallbackResponse = await fallback();
+    return fallbackResponse;
+  }
+}
 
 // export를 수정하지 마세요.
 export { getDataWithFallback };
