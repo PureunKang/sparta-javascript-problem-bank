@@ -11,6 +11,12 @@
 
 function introduce(name, age) {
   // TODO
+  if (name && age) {
+    return `안녕하세요! 저는 ${name}, 나이는 ${age}입니다.`;
+  }
+  if (name && !age) {
+    return `안녕하세요! 저는 ${name}, 나이는 비공개입니다.`;
+  }
 }
 
 // export 를 수정하지 마세요.
