@@ -11,6 +11,9 @@
  */
 function sumArray(arr) {
   // TODO
+  let count = 0;
+  arr.forEach((num) => (count += num));
+  return count;
 }
 
 // export를 수정하지 마세요.
