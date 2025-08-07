@@ -14,6 +14,7 @@
  */
 function subArray(arr, start, end) {
   // TODO
+  return end !== undefined ? arr.slice(start, end) : arr.slice(start)
 }
 
 // export를 수정하지 마세요.
