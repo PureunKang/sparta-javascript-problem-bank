@@ -10,7 +10,7 @@
  */
 function sortNumbers(arr) {
   // TODO
-  
+  return arr.slice().sort((a,b)=>a-b);
 }
 
 // export를 수정하지 마세요.
